@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        /**
+        /*
          *            A
          *         B     C
          *       D   E      F
@@ -16,7 +16,7 @@ public class Main {
         TreeNode c = new TreeNode("C", null, f);
         TreeNode a = new TreeNode("A", b, c);
 
-        List<TreeNode> resultIter = BfsIter.bfs(a);
+        List<TreeNode> resultIter = BfsIter.bfs2(a);
 
         System.out.println("BFS iter:");
         resultIter.forEach(node -> System.out.print(node.getName() + "-->"));

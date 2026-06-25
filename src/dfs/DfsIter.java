@@ -4,6 +4,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
+import java.util.Stack;
 
 public class DfsIter {
 
@@ -13,8 +14,33 @@ public class DfsIter {
             return result;
         }
 
-        Deque<TreeNode> stack = new ArrayDeque<>();
-        stack.push(root);
+        Deque<TreeNode> queue = new ArrayDeque<>();
+        queue.push(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.pop();
+            result.add(node);
+
+            if (node.getRight() != null) {
+                queue.push(node.getRight());
+            }
+
+            if (node.getLeft() != null) {
+                queue.push(node.getLeft());
+            }
+        }
+
+        return result;
+    }
+
+    public static List<TreeNode> dfs2(TreeNode root) {
+        List<TreeNode> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+
+        Stack<TreeNode> stack = new Stack<>();
+        stack.add(root);
 
         while (!stack.isEmpty()) {
             TreeNode node = stack.pop();

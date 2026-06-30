@@ -20,5 +20,22 @@ public class Main {
 
         System.out.println("BFS iter:");
         resultIter.forEach(node -> System.out.print(node.getName() + "-->"));
+        System.out.println();
+
+        System.out.println("BFS recursion:");
+
+        System.out.println("inorder:");
+        List<TreeNode> inorder = BfsRecursion.inorder(a);
+        inorder.forEach(node -> System.out.print(node.getName() + "-->"));
+        System.out.println();
+
+        System.out.println("preorder:");
+        List<TreeNode> preorder = BfsRecursion.preorder(a);
+        preorder.forEach(node -> System.out.print(node.getName() + "-->"));
+        System.out.println();
+
+        System.out.println("postorder:");
+        List<TreeNode> postorder = BfsRecursion.postorder(a);
+        postorder.forEach(node -> System.out.print(node.getName() + "-->"));
     }
 }

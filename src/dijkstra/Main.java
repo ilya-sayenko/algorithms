@@ -1,5 +1,10 @@
 package dijkstra;
 
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
 public class Main {
 
 //    https://www.baeldung.com/java-dijkstra
@@ -36,5 +41,9 @@ public class Main {
 
         var result = Dijkstra.calculateShortestPathFromSource(nodeA);
         System.out.println(result);
+
+
+        Map<Integer, Integer> usage = new HashMap<>();
+        Map<Integer, Integer> map = new TreeMap<>(Comparator.comparingInt(a -> usage.getOrDefault(a, -1)));
     }
 }

@@ -1,8 +1,9 @@
-package bubble;
+package sort.bubble;
 
 import java.util.Arrays;
 
 public class Main {
+
     public static void main(String[] args) {
         int[] array = new int[] {100, 3, 2, 13, 34, 2, 6, 0};
         sort(array);

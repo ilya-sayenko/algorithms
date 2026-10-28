@@ -2,7 +2,7 @@ package bfs;
 
 import java.util.List;
 
-public class Main {
+public class MainBfs {
     public static void main(String[] args) {
         /*
          *            A

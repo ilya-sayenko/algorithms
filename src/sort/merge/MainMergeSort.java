@@ -2,7 +2,7 @@ package sort.merge;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class MainMergeSort {
 
     public static void mergeSort(int[] arr, int left, int right) {
         if (left >= right) {

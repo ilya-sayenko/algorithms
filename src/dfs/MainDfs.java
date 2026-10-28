@@ -2,7 +2,7 @@ package dfs;
 
 import java.util.List;
 
-public class Main {
+public class MainDfs {
     public static void main(String[] args) {
         /*
          *            A

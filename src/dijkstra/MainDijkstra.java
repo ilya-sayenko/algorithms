@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Main {
+public class MainDijkstra {
 
 //    https://www.baeldung.com/java-dijkstra
 
